@@ -1,14 +1,12 @@
 # EMVCoParser
-A QR Code is an ISO 18004-compliant encoding and visualization of data. And then EMV technologies create specifications pertaining to the use of QR Code for payment purposes. This library are created to parsing those EMVCo Spesification. For Example :
-String that we retrieve from the QR are seems like bellow :
-**0107JohnDoe0208MarieAnn03090107Jakarta04090207Bangkok**
-And the table for the result parsing are seems like this :
 | Tag | Len | Subtag | Len | Value |
 | --- | ---- | --- | --- | --- |
 | 01 | 07 | - | - | JohnDoe |
 | 02 | 08 | - | - | MarieAnn |
 | 03 | 09 | 01 | 07 | Jakarta |
 | 04 | 09 | 02 | 07 | Bangkok |
+
+A QR Code is an ISO 18004-compliant encoding and visualization of data. And then EMV technologies create specifications pertaining to the use of QR Code for payment purposes. Above are example of EMVCo QR mapping result. And this library are created to parsing those EMVCo Spesification. 
 
 # How to use
 Example : You want to get value JAKARTA, then you should know the Tag, and Subtag of it. In case JAKARTA the tag is 03 and the subtag is 01.
